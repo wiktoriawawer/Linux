@@ -1,4 +1,4 @@
-:! find 
+
 CMD="find"
 nazwa=""
 numer=0
@@ -37,7 +37,6 @@ while [[ $numer -ne 8 ]]; do
 		echo "7"
 		if [[ nazwa != "" ]];then
 			komenda=" $CMD -name \"$nazwa\""
-			:!$komenda
 			echo $komenda
 		fi 
 	elif [[  $numer -eq 8 ]];then
